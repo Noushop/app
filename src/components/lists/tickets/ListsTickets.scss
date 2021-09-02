@@ -1,0 +1,63 @@
+@import "@my2rela/react-kit/components/style.scss";
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+
+  .ticket-list__filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .ticket-list__filter__input {
+      width: 15rem;
+    }
+
+    .ticket-list__filter__button {
+      width: 10rem;
+    }
+
+    @include mobileBreakpoint {
+      flex-wrap: wrap;
+
+      .ticket-list__filter__input {
+        width: 100%;
+      }
+
+      .ticket-list__filter__button {
+        width: 100%;
+        margin: 0.3rem 0;
+      }
+    }
+  }
+
+  .ticket-list__content {
+    display: flex;
+    flex-direction: column;
+
+    .ticket-list__content-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .__content_ticket-list {
+        width: 14rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0.4rem;
+
+        @include tabletBreakpoint {
+          width: 46%;
+        }
+
+        @include mobileBreakpoint {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .ticket-list__spinner {
+    margin: 5rem auto;
+  }
+}

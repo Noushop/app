@@ -1,0 +1,8 @@
+@import "@my2rela/react-kit/components/style.scss";
+.page-add-inventorie {
+
+  .page-add-inventorie__form {
+    @include border-card;
+    margin: 1rem auto;
+  }
+}

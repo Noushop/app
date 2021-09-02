@@ -1,0 +1,63 @@
+@import "@my2rela/react-kit/components/style.scss";
+.purchase-list {
+  display: flex;
+  flex-direction: column;
+
+  .purchase-list__filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .purchase-list__filter__input {
+      width: 15rem;
+    }
+
+    .purchase-list__filter__button {
+      width: 10rem;
+    }
+
+    @include mobileBreakpoint {
+      flex-wrap: wrap;
+
+      .purchase-list__filter__input {
+        width: 100%;
+      }
+
+      .purchase-list__filter__button {
+        width: 100%;
+        margin: 0.3rem 0;
+      }
+    }
+  }
+
+  .purchase-list__content {
+    display: flex;
+    flex-direction: column;
+
+    .purchase-list__content-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .__content_purchase-list {
+        width: 14rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0.4rem;
+
+        @include tabletBreakpoint {
+          width: 46%;
+        }
+
+        @include mobileBreakpoint {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .purchase-list__spinner {
+    margin: 5rem auto;
+  }
+}

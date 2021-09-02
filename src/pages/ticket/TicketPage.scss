@@ -1,0 +1,53 @@
+@import "@my2rela/react-kit/components/style.scss";
+.ticket-page {
+
+  .ticket-page__infos {
+
+    .ticket-page__header {
+      display: flex;
+      justify-content: space-between;
+
+      .ticket-page__header-numticket {
+        .ticket-page__header-numticket__key {
+          font-style: oblique;
+        }
+
+        .ticket-page__header-numticket__value {
+          font-weight: bold;
+          font-size: 15px;
+        }
+      }
+      .ticket-page__header-price {
+        .ticket-page__header-price__key {
+          font-style: oblique;
+        }
+
+        .ticket-page__header-price__value {
+          font-weight: bold;
+          font-size: 15px;
+        }
+      }
+      .ticket-page__header-user {
+        .ticket-page__header-user__key {
+          font-style: oblique;
+        }
+
+        .ticket-page__header-user__value {
+          font-weight: bold;
+          font-size: 15px;
+        }
+      }
+    }
+
+    .ticket-page__list {
+      margin: 1rem auto;
+      width: 100%;
+
+      .__list-sales {
+        @include border-card;
+        width: auto;
+        margin: 0.5rem auto;
+      }
+    }
+  }
+}

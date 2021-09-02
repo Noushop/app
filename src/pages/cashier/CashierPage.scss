@@ -1,0 +1,29 @@
+@import "@my2rela/react-kit/components/style.scss";
+.page-cashier {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+
+  .page-cashier__action {
+    width: 100%;
+    @include border-card;
+  }
+
+  .page-cashier__cart {
+    margin: 1rem 0;
+    box-sizing: border-box;
+    width: 100%;
+    @include desktopBreakpoint {
+      width: 22%;
+    }
+  }
+
+  .page-cashier__list {
+    width: 100%;
+    box-sizing: border-box;
+    @include desktopBreakpoint {
+      width: 75%;
+    }
+  }
+}

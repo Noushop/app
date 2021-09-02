@@ -1,0 +1,17 @@
+@import "@my2rela/react-kit/components/style.scss";
+.section-profile {
+  line-height: 1.5rem;;
+
+  .section-profile__big-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .section-profile__item {
+    display: flex;
+
+    .section-profile__item__title {
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import "@my2rela/react-kit/components/style.scss";
+.page-board {
+  margin-top: 1rem;
+
+  .page-board__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .page-board__body-left {
+      width: 100%;
+      order: 2;
+      
+      @include desktopBreakpoint {
+        width: 29%;
+        order: 1;
+      }
+    }
+
+    .page-board__body-right {
+      width: 100%;
+      order: 1;
+
+      @include desktopBreakpoint {
+        width: 70%;
+        order: 2;
+      }
+    }
+
+    .page-board__body__item {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

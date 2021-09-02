@@ -1,0 +1,87 @@
+@import "@my2rela/react-kit/components/style.scss";
+.section-inventorie-list {
+
+  .section-inventorie-list__header {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    .section-inventorie-list____header__title {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .section-inventorie-list__header__tips {
+      font-size: 11px;
+      color: $color-main-light;
+    }
+  }
+
+  .section-inventorie-list__pagination {
+    display: flex;
+    flex-direction: column;
+    
+    .section-inventorie-list__pagination--spinner {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+
+      &.hide--spinner {
+        display: none;
+      }
+    }
+
+    .section-inventorie-list__pagination-- {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .section-inventorie-list__items {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    .items__item {
+      width: 30%;
+      margin-bottom: 0.5rem;
+      line-height: 1rem;
+  
+      @include tabletBreakpoint {
+        width: 49%;
+      }
+  
+      @include mobileBreakpoint {
+        width: 100%;
+      }
+
+      .item__name {
+        font-weight: bold;
+        color: $color-main;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .item__barcode,
+      .item__quantity {
+        color: $color-main-dark;
+        font-size: 11px;
+      }
+
+      .item__pricing {
+        font-size: 11px;
+        display: flex;
+        justify-content: space-between;
+        color: $color-main-dark;
+      }
+
+      .item__last-update {
+        font-size: 9px;
+        text-align: end;
+        color: $color-main-light;
+      }
+    }
+  }
+}

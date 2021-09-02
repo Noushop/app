@@ -1,0 +1,4 @@
+@import "@my2rela/react-kit/components/style.scss";
+.inventories-list-page {
+  @include border-card;
+}
