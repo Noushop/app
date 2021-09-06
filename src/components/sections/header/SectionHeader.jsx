@@ -16,6 +16,10 @@ const linkList = [
     path: '/tickets',
     name: 'Stats',
   },
+  {
+    path: '/users/add',
+    name: 'Users',
+  },
 ];
 
 const SectionHeader = (props) => {
