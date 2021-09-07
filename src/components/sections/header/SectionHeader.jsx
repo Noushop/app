@@ -17,7 +17,7 @@ const linkList = [
     name: 'Stats',
   },
   {
-    path: '/users/add',
+    path: '/users',
     name: 'Users',
   },
 ];

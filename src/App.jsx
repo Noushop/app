@@ -19,6 +19,7 @@ import TicketsPage from './pages/stats/tickets/TicketsPage';
 import TicketPage from './pages/ticket/TicketPage';
 import PurchasesPage from './pages/stats/purchases/PurchasesPage';
 import UserAddPage from './pages/users/add/UserAddPage';
+import UserListPage from './pages/users/list/UserListPage';
 import NotFound from './pages/errors/notFound/NotFound';
 
 const App = () => (
@@ -34,6 +35,7 @@ const App = () => (
           <RouterWrapper exact path="/tickets" menu={subMenu.stats} layout={LayoutMain}><TicketsPage /></RouterWrapper>
           <RouterWrapper exact path="/ticket/:ticketNumber" menu={subMenu.stats} layout={LayoutMain}><TicketPage /></RouterWrapper>
           <RouterWrapper exact path="/purchases" menu={subMenu.stats} layout={LayoutMain}><PurchasesPage /></RouterWrapper>
+          <RouterWrapper exact path="/users" menu={subMenu.users} layout={LayoutMain}><UserListPage /></RouterWrapper>
           <RouterWrapper exact path="/users/add" menu={subMenu.users} layout={LayoutMain}><UserAddPage /></RouterWrapper>
 
           {/* Sub Main Layout */}

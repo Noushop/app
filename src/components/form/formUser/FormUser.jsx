@@ -27,6 +27,10 @@ const optionsRole = [
     value: 'cashier',
     text: 'Cashier',
   },
+  {
+    value: 'accountant',
+    text: 'Accountant',
+  },
 ];
 
 const FormUser = (props) => {
@@ -43,10 +47,6 @@ const FormUser = (props) => {
 
   const handleChange = (key) => (e) => {
     setValues({ ...values, [key]: e.target.value });
-  };
-
-  const handleChangeRole = (v) => {
-    setValues({ ...values, role: v });
   };
 
   const isValidName = () => values.name && values.name.length > 3;
@@ -72,7 +72,7 @@ const FormUser = (props) => {
       </div>
       <div className="form-inventorie__item">
         <KitTextField
-          label="Name"
+          label="Email"
           onChange={handleChange('email')}
           value={values.email}
           type="email"
@@ -81,8 +81,8 @@ const FormUser = (props) => {
       </div>
       <div className="form-inventorie__item">
         <KitTextField
-          label="Name"
-          onChange={handleChange('email')}
+          label="Password"
+          onChange={handleChange('password')}
           value={values.password}
           type="password"
           error={values.password && !isValidPassword() ? 'Must contain one uppercase and 6 char at least' : ''}
@@ -91,7 +91,7 @@ const FormUser = (props) => {
       <div className="form-inventorie__item">
         <KitSelectField
           label="Role"
-          onChange={handleChangeRole}
+          onChange={handleChange('role')}
           value={values.role}
           options={optionsRole}
         />
