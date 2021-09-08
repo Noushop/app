@@ -38,7 +38,7 @@ const UserAddPage = () => {
 
   return (
     <div className="page-user-add">
-      <h3>Add a new Inventorie</h3>
+      <h3>Add a new User</h3>
       <KitAlert isOpen={messageAlert} onClose={handleCloseAlert} type={typeAlert}>
         {messageAlert}
       </KitAlert>
