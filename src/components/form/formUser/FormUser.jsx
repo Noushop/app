@@ -7,7 +7,7 @@ const defaultValues = {
   name: '',
   email: '',
   password: '',
-  role: '',
+  role: 'admin',
 };
 
 const optionsRole = [
