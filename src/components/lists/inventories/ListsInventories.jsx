@@ -6,6 +6,7 @@ import {
   KitSpinner,
   KitButton,
 } from '@my2rela/react-kit';
+import useScanDetection from 'use-scan-detection';
 
 import './ListsInventories.scss';
 
@@ -94,6 +95,16 @@ const ListsInventories = (props) => {
       </div>
     </div>
   ));
+
+  const setBarcodeScan = (v) => {
+    if (v !== searchValue) {
+      setSearchValue(v);
+      setCurrentPage(1);
+      fetchData(v, 1);
+    }
+  };
+
+  useScanDetection({ onComplete: setBarcodeScan });
 
   const renderFilter = () => (
     <div className="filter__input">

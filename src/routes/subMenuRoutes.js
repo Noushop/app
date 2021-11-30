@@ -1,11 +1,11 @@
 const subMenu = {
   inventories: [
     {
-      libelle: 'List',
+      libelle: 'Inventories',
       url: '/inventories/',
     },
     {
-      libelle: 'Add',
+      libelle: 'Create',
       url: '/inventories/add-inventorie',
     },
   ],
@@ -21,11 +21,11 @@ const subMenu = {
   ],
   users: [
     {
-      libelle: 'List',
+      libelle: 'Users',
       url: '/users',
     },
     {
-      libelle: 'Add',
+      libelle: 'Create',
       url: '/users/add',
     },
   ],

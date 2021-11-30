@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { KitTextField, KitButton } from '@my2rela/react-kit';
+import useScanDetection from 'use-scan-detection';
 
 import './FormInventorie.scss';
 
@@ -63,6 +64,14 @@ const FormInventorie = (props) => {
     && isValidNumber('quantity')
     && isCostValid()
     && !disableSubmit;
+
+  const setBarcodeScan = (v) => {
+    if (v !== values.barcode) {
+      setValues({ ...values, barcode: v });
+    }
+  };
+
+  useScanDetection({ onComplete: setBarcodeScan });
 
   return (
     <div className="form-inventorie">
